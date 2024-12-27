@@ -1,0 +1,14 @@
+app = 'fly-python-volume'
+primary_region = 'nrt'
+
+[build]
+
+[[vm]]
+  memory = '4gb'
+  cpu_kind = 'shared'
+  cpus = 2
+
+[mounts]
+  source = "data"
+  destination = "/data"
+  initial_size = "1gb"
